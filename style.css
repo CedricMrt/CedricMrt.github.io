@@ -163,6 +163,7 @@ a {
     }
     #chef {
         margin: 0em;
+        padding-left: 1em;
     }
     .bkground {
         padding: 1em 1em;
@@ -174,7 +175,7 @@ a {
         margin-right: 1em;
     }
     #aide {
-        padding: 1em;
+        padding: 2em;
     }
     #map {
         width: 200px;
