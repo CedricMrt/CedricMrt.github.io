@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div id="logo_titre"><img src="./logo resto.png" alt="">
+            <h1>Restaurant le CSS</h1>
+    </div>
+       <nav>
+           <span><a href="#">Acceuil</a></span>
+           <span><a href="#philo">Notre Philosophie</a></span>
+           <span><a href="#carte">La Carte</a></span>
+           <span><a href="#informations">Infos Pratiques</a></span>
+       </nav>
+    </header>
+    
+    <main>
+        
+        <h1>Bienvenue au restaurant !</h1>
+
+    </main>
+    
+    <section>
+        <a name="philo" class="anchor"></a>
+        <h2>Notre Philosophie</h2>
+        <div id="chef">
+            <img id="portrait" src="./Portrait chef.jpeg" alt="le chef">
+            <p>Une des chose les plus difficiles est d’arriver à normaliser, standardiser les plats de façon à pouvoir offrir le même service à tous les clients, tous les jours. <br> <br> <br> La perfection en cuisine consiste en des milliers de détails qui sont optimisés. <br> <br> <br> Elle n’a rien à voir avec l’improvisation et l’inspiration.</p>
+
+        </div>
+
+    </section>
+    
+    <section class="bkground">
+        <a name="carte" class="anchor"></a>
+        
+        <h2>La Carte</h2>
+        
+        <div id="menu">
+            <h3>Notre menu du midi à 19 €</h3>
+            
+            <p>Tranche de fois gras de canard mi-cuit, chutney et brioche maison</p>
+            
+            <div class="ligne"></div>
+        
+            <p>jarret de porc confit, purée du moment,jeunes légumes bio de notre producteur</p>
+        
+            <div class="ligne"></div>
+        
+            <p>Biscuit chocolat noir, mousse au lait, griotte et chantilly</p>
+            
+            <h3>Notre menu du soir à 27 €</h3>
+
+            <p>Terrine de pot-au-feu, vinaigrette aux oeufs</p>
+            
+            <div class="ligne"></div> 
+
+            <p>Poisson du jour poêlé, vinaigrette citron meyer et jeunes légumes bio de notre producteur</p>
+            
+            <div class="ligne"></div>
+            
+            <p>Chou à la crème pâtissière à la vanille bourbon et citron confit </p>
+        </div>
+        
+
+    </section>
+    
+    <section id="plat">
+        
+        
+    </section>
+    
+    <section>
+        <a name="informations" class="anchor"></a>
+        <h2>Infos Pratiques</h2>
+        
+        <div id="aide">
+        <div class="infos">
+            <h3>Horaires d'ouverture:</h3>
+            
+            <p> Du Lundi au Jeudi : 12h00-14h30 et 19h00-22h30 
+            </p>
+            <p> Du Vendredi et Samedi : 12h00-14h30 et 19h00-23h30</p>
+            <p> Le Dimanche : 11h30-14h30 et 19h00-22h30</p>
+        </div>
+           <div class="infos">
+            <h3>Adresse:</h3>
+            
+            <p>Notre adresse est le 2 impasse boris vian à Cuxac d'Aude.</p>
+            <p>Trouvez votre itinéraire sur cette carte :</p>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.332061497085!2d2.987497215768125!3d43.24446198678215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1aee503c91557%3A0xf441b27e09ddcc08!2s2%20Imp.%20Boris%20Vian%2C%2011590%20Cuxac-d&#39;Aude!5e0!3m2!1sfr!2sfr!4v1652823930715!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+        
+    </section>
+
+    <section class=bkground>
+        
+        <h2>Nous contacter</h2>
+        
+        <form id="contact" action="" method="">
+            <div>
+                <label>Votre Nom : </label>
+                <input type="text" name="name">
+            </div>
+            <div>
+                <label>Votre E-mail : </label>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <label>Votre Méssage : </label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="bouton">
+                <input type="submit" value="Envoyer" >
+            </div>
+
+        </form>
+
+
+    </section>
+
+    <footer>
+        <p>&copy;2020 - Restaurant le CSS - Tous droits réservés</p>
+
+    </footer>
+    
+</body>
+</html>
