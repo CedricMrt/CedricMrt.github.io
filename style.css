@@ -169,13 +169,12 @@ a {
         padding: 1em 1em;
     }
     #plat {
-        height: 1em;
+        height: 8em;
     }
-    .info {
-        margin-right: 1em;
-    }
+    
     #aide {
-        padding: 2em;
+        margin-right: 0em;
+        padding-left: 2em;
     }
     #map {
         width: 200px;
