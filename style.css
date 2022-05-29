@@ -54,7 +54,7 @@ main h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2.5em 30em;
+    margin: 2.5em 20em;
 }
 
 section h2 {
@@ -161,7 +161,7 @@ a {
         
     }
     #chef {
-        margin: 0em;
+        margin: 0em 20em;
         padding-left: 1em;
     }
     .bkground {
@@ -179,7 +179,48 @@ a {
         width: 200px;
         height: 200px;
     }
-  }
+}
+
+@media only screen and (max-width : 980px) {
+    
+    #chef {
+        margin: 0em 15em;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    
+    #chef {
+        margin: 0em 10em;
+    }
+}
+
+@media only screen and (max-width : 680px)  {
+
+    header {
+        flex-direction: column;
+    }
+    #chef {
+        margin: 0em 5em;
+    }
+}
+@media only screen and (max-width : 490px)  {
+    
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav span{
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    #chef {
+        margin: 0em 1em;
+    }
+    
+}
+    
+    
   
 
 
