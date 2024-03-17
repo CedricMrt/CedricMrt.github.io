@@ -1,136 +1,295 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le CSS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-       <div id="logo_titre"><img src="./logo resto.png" alt="">
-            <h1>Restaurant le CSS</h1>
-    </div>
-       <nav>
-           <span><a href="#">Acceuil</a></span>
-           <span><a href="#philo">Notre Philosophie</a></span>
-           <span><a href="#carte">La Carte</a></span>
-           <span><a href="#informations">Infos Pratiques</a></span>
-       </nav>
-    </header>
-    
-    <main>
-        
-        <h1>Bienvenue au restaurant !</h1>
-
-    </main>
-    
-    <section>
-        <a name="philo" class="anchor"></a>
-        <h2>Notre Philosophie</h2>
-        <div id="chef">
-            <img id="portrait" src="./Portrait chef.jpeg" alt="le chef">
-            <p>Une des chose les plus difficiles est d’arriver à normaliser, standardiser les plats de façon à pouvoir offrir le même service à tous les clients, tous les jours. <br> <br> <br> La perfection en cuisine consiste en des milliers de détails qui sont optimisés. <br> <br> <br> Elle n’a rien à voir avec l’improvisation et l’inspiration.</p>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vroom Vroom</title>
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href=""
+        ><img src="./images/logo.png" alt="logo voiture"
+      /></a>
+      <ul class="navigation">
+        <li class="items"><a class="active" href="#home">Home</a></li>
+        <li class="items"><a href="#function">Voitures</a></li>
+        <li class="items"><a href="#benefit">Services</a></li>
+        <li class="items"><a href="#about">À propos</a></li>
+        <li class="items"><a href="#avis">Les avis</a></li>
+      </ul>
+      <div class="btns">
+        <a href="#" class="user"><ion-icon name="person-sharp"></ion-icon></a>
+      </div>
+      <div id="toggle">
+        <ion-icon class="ouvrir" name="menu-sharp"></ion-icon>
+        <ion-icon class="fermer" name="close-sharp"></ion-icon>
         </div>
-
-    </section>
-    
-    <section class="bkground">
-        <a name="carte" class="anchor"></a>
-        
-        <h2>La Carte</h2>
-        
-        <div id="menu">
-            <h3>Notre menu du midi à 19 €</h3>
-            
-            <p>Tranche de fois gras de canard mi-cuit, chutney et brioche maison</p>
-            
-            <div class="ligne"></div>
-        
-            <p>jarret de porc confit, purée du moment,jeunes légumes bio de notre producteur</p>
-        
-            <div class="ligne"></div>
-        
-            <p>Biscuit chocolat noir, mousse au lait, griotte et chantilly</p>
-            
-            <h3>Notre menu du soir à 27 €</h3>
-
-            <p>Terrine de pot-au-feu, vinaigrette aux oeufs</p>
-            
-            <div class="ligne"></div> 
-
-            <p>Poisson du jour poêlé, vinaigrette citron meyer et jeunes légumes bio de notre producteur</p>
-            
-            <div class="ligne"></div>
-            
-            <p>Chou à la crème pâtissière à la vanille bourbon et citron confit </p>
-        </div>
-        
-
-    </section>
-    
-    <section id="plat">
-        
-        
-    </section>
-    
-    <section>
-        <a name="informations" class="anchor"></a>
-        <h2>Infos Pratiques</h2>
-        
-        <div id="aide">
-        <div class="infos">
-            <h3>Horaires d'ouverture:</h3>
-            
-            <p> Du Lundi au Jeudi : 12h00-14h30 et 19h00-22h30 
+    </nav>
+    <section id="home" class="home">
+        <div class="main">
+            <h1><span>Roulez L'Éxperience</span> <br> Location de Voitures Simplifiée</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, delectus
+            cum. Ea distinctio rerum recusandae?
             </p>
-            <p> Du Vendredi et Samedi : 12h00-14h30 et 19h00-23h30</p>
-            <p> Le Dimanche : 11h30-14h30 et 19h00-22h30</p>
         </div>
-           <div class="infos">
-            <h3>Adresse:</h3>
-            
-            <p>Notre adresse est le 2 impasse boris vian à Cuxac d'Aude.</p>
-            <p>Trouvez votre itinéraire sur cette carte :</p>
-            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.332061497085!2d2.987497215768125!3d43.24446198678215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1aee503c91557%3A0xf441b27e09ddcc08!2s2%20Imp.%20Boris%20Vian%2C%2011590%20Cuxac-d&#39;Aude!5e0!3m2!1sfr!2sfr!4v1652823930715!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        </div>
-    </div>
-        
-    </section>
-
-    <section class=bkground>
-        
-        <h2>Nous contacter</h2>
-        
-        <form id="contact" action="" method="">
-            <div>
-                <label>Votre Nom : </label>
-                <input type="text" name="name">
+        <div class="app-store">
+            <a href=""><img src="./images/apple.png" alt="logo lien app store" /></a>
+            <a href=""
+          ><img src="./images/google.png" alt="logo lien google play"
+        /></a></div> 
+        <form action="" class="input">
+            <div class="search">
+                <label for="search">Emplacement</label>
+                <input type="search" name="search" id="search" required placeholder="Ou recherchez vous ?" />
+            </div> 
+            <div class="search">
+                <label for="startdate">Date de début</label>
+                <input type="date" name="startdate" id="startdate" required />
             </div>
-            <div>
-                <label>Votre E-mail : </label>
-                <input type="text" name="email">
+            <div class="search">
+                <label for="enddate">Date de fin</label>
+                <input type="date" name="enddate" id="enddate" required />
             </div>
-            <div>
-                <label>Votre Méssage : </label>
-                <textarea name="message" cols="30" rows="10"></textarea>
-            </div>
-            <div class="bouton">
-                <input type="submit" value="Envoyer" >
-            </div>
-
+                <button type="submit">Rechercher</button>
         </form>
-
-
     </section>
-
+    <section id="function">
+      <h4>Comment ça marche ?</h4>
+      <h2>Locations en 3 étapes seulement !</h2>
+      <div id="step">
+        <div class="substep">
+            <ion-icon name="map-outline"></ion-icon>
+            <h3>Choisir un emplacement</h3>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore amet
+            nesciunt cumque! Vero, eius quam?
+            </p>
+        </div>
+        <div class="substep">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <h3>Choisir une date</h3>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore amet
+            nesciunt cumque! Vero, eius quam?
+            </p>
+        </div>
+        <div class="substep">
+            <ion-icon name="car-sport-outline"></ion-icon>
+            <h3>Réserver une voiture</h3>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore amet
+            nesciunt cumque! Vero, eius quam?
+            </p>
+        </div>
+      </div>
+    </section>
+    <section id="benefit">
+      <h4>Nos prestations</h4>
+      <h2>Découvrez les meilleures offres !</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img">
+                <img src="./images/car-01.jpg" alt="image voiture" /></div>
+                <p>2018</p>
+                <p>BMW</p>
+                <p>150€<span> /mois</span></p>
+                <button class="btn">Louer maintenant</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="./images/car-02.jpg" alt="image voiture" /></div>
+                <p>2018</p>
+                <p>Honda</p>
+                <p>150€<span> /mois</span></p>
+                <button class="btn">Louer maintenant</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="./images/car-03.jpg" alt="image voiture" /></div>
+                <p>2018</p>
+                <p>Yamaha</p>
+                <p>150€<span> /mois</span></p>
+                <button class="btn">Louer maintenant</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="./images/car-04.jpg" alt="image voiture" /></div>
+                <p>2018</p>
+                <p>Toyota</p>
+                <p>150€<span> /mois</span></p>
+                <button class="btn">Louer maintenant</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="./images/car-05.jpg" alt="image voiture" /></div>
+                <p>2018</p>
+                <p>Toyota</p>
+                <p>150€<span> /mois</span></p>
+                <button class="btn">Louer maintenant</button>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                <img src="./images/car-06.jpg" alt="image voiture" /></div>
+                <p>2018</p>
+                <p>BMW</p>
+                <p>150€<span> /mois</span></p>
+                <button class="btn">Louer maintenant</button>
+            </div>
+        </div>    
+    </section>
+    <section id="about">
+        <h4>Qui somme nous ?</h4>
+        <h2>Notre histoire !</h2>
+        <div class="history">
+          <img src="./images/about.png" alt="image voiture" />
+          <div class="text">
+            <span>À PROPOS DE NOUS</span>
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ipsa
+            sint neque aut ducimus! Voluptatum dolores autem dolore dolorem
+            sequi!
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quasi
+            corrupti quae laboriosam sunt natus aliquid iure doloribus aliquam
+            vitae!
+            </p>
+            <button>En savoir plus</button>
+          </div>
+        </div>
+    </section>
+    <section id="avis">
+        <h4>Votre avis compte !</h4>
+        <h2>ils nous ont fait confiances</h2>
+        <div id="post">
+            <div class="aviscards">
+                <div class="photo">
+                    <img src="./images/review-01.jpg" alt="photo avatar" />
+                </div>
+                <div class="notes">
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="names">Thomas Does</p>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+                numquam fuga perferendis mollitia earum at!
+                </p>
+            </div>
+            <div class="aviscards">
+                <div class="photo">
+                    <img src="./images/review-02.jpg" alt="photo avatar" />
+                </div>
+                <div class="notes">
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="names">Thomas Does</p>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+                numquam fuga perferendis mollitia earum at!
+                </p>
+            </div>
+            <div class="aviscards">
+                <div class="photo">
+                    <img src="./images/review-03.jpg" alt="photo avatar" />
+                </div>
+                <div class="notes">
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+              
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p class="names">Thomas Does</p>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt
+                numquam fuga perferendis mollitia earum at!
+                </p>
+            </div>
+          </div>  
+    </section>
+    <section id="news">
+        <label for="newsletter">Inscrivez vous à la newsletter</label>
+        <div class="newsletter">
+            <input
+            type="email"
+            name="newsletter"
+            id="newsletter"
+            placeholder="Indiquez votre e-mail"
+            required
+          />
+          <button type="submit">S'inscrire</button></div>
+    </section>
     <footer>
-        <p>&copy;2020 - Restaurant le CSS - Tous droits réservés</p>
-
+        <div id="social">
+          <img src="./images/logo.png" alt="logo voiture" />
+          <ul>
+            <li><ion-icon name="logo-facebook"></ion-icon></li>
+            <li><ion-icon name="logo-instagram"></ion-icon></li>
+            <li><ion-icon name="logo-twitter"></ion-icon></li>
+            <li><ion-icon name="logo-youtube"></ion-icon></ion-icon></li>
+          </ul>
+        </div>
+        <div id="informations">
+            <p>Informations</p>
+          <ul>
+            <li><a href="#">Conditions de vente</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div id="map">
+            <p>Nos locaux</p>
+          <ul>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Algerie</a></li>
+            <li><a href="#">Espagne</a></li>
+            <li><a href="#">Italie</a></li>
+            <li><a href="#">Canada</a></li>
+          </ul>
+        </div>
+        <div id="pay">
+            <p>Payements</p>
+          <ul>
+            <li><img src="./images/pay-01.png" alt="mastercard" /></li>
+            <li><img src="./images/pay-02.png" alt="paypal" /></li>
+            <li><img src="./images/pay-03.png" alt="visa" /></li>
+            <li><img src="./images/pay-04.png" alt="american express" /></li>
+          </ul>
+        </div>
     </footer>
-    
-</body>
+      <div id="copyright"><p>© Moi-meme - tous droits réservés - 2023</p></div>
+
+    <script src="app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
