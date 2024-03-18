@@ -123,62 +123,6 @@ nav .user ion-icon {
   background: #bd3816;
 }
 
-/* ############# MENU BURGER###################### */
-
-#toggle {
-  display: none;
-}
-
-@media all and (max-width: 991px) {
-  #toggle {
-    display: block;
-    color: black;
-    cursor: pointer;
-    position: relative;
-    z-index: 20;
-  }
-
-  #toggle .ouvrir {
-    display: block;
-  }
-
-  #toggle .fermer {
-    display: none;
-  }
-
-  .active #toggle .ouvrir {
-    display: none;
-  }
-
-  .active #toggle .fermer {
-    display: block;
-  }
-
-  .navigation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100vh;
-    background: transparent;
-    backdrop-filter: blur(40px);
-    flex-direction: column;
-    padding: 2rem;
-    justify-content: space-around;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 1s;
-  }
-
-  .active .navigation {
-    transform: translateX(0);
-  }
-
-  .navigation li a {
-    color: black;
-  }
-}
-
 /* #################### main section ############ */
 
 :target:before /* avoid the problem with the fixed navbar */ {
@@ -266,6 +210,133 @@ form button {
 
 form button:hover {
   background: #bd3816;
+}
+
+/* ################### sign in / sign up ######### */
+
+.wrapper {
+  position: absolute;
+  top: 65%;
+  width: 90%;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.wrapper form {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  left: 2.5rem;
+}
+
+.wrapper.show-popup {
+  transform: translateX(0);
+}
+
+.wrapper .form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 20px;
+}
+
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+.wrapper.on .form-box.login {
+  transition: none;
+  transform: translateX(-500px);
+}
+
+.wrapper .form-box.register {
+  gap: 1rem;
+  position: absolute;
+  top: -400px;
+  left: 50px;
+  transition: none;
+  transform: translateX(-500px);
+}
+
+.wrapper.on .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.icon-close ion-icon {
+  position: absolute;
+  color: #bd3816;
+  top: -18px;
+  right: -18px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.wrapper h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.input-box label {
+  position: absolute;
+  font-size: 1rem;
+  left: 0;
+  top: -10px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  font-size: 1.2rem;
+}
+
+.input-box .icon {
+  font-size: 1.6rem;
+  top: 12px;
+  right: 45px;
+}
+
+.wrapper .remember-forgot {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="checkbox"] {
+  accent-color: black;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(244, 92, 54);
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.register-login {
+  width: 100%;
+}
+.register-login a {
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(244, 92, 54);
+}
+
+.register-login a:hover {
+  text-decoration: underline;
 }
 
 /* ################### FUNCTION SECTION ########## */
@@ -623,10 +694,85 @@ footer p {
   font-size: 1.3rem;
 }
 
+/* ############# MENU BURGER###################### */
+
+#toggle {
+  display: none;
+}
+
+@media all and (max-width: 991px) {
+  #toggle {
+    display: block;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+  }
+
+  #toggle .ouvrir {
+    display: block;
+  }
+
+  #toggle .fermer {
+    display: none;
+  }
+
+  .active #toggle .ouvrir {
+    display: none;
+  }
+
+  .active #toggle .fermer {
+    display: block;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+
+  .active .navigation {
+    transform: translateX(0);
+  }
+
+  .navigation li a {
+    color: black;
+  }
+}
+
 /* ################## MEDIA QUERIES #################*/
 
-@media screen and (max-width: 991px) {
-  .home form {
-    max-width: 80%;
+@media screen and (max-width: 768px) {
+  .home .input {
+    bottom: 0.5rem;
+    left: 1rem;
+    max-height: 30rem;
+    margin-right: 1rem;
+  }
+
+  .wrapper {
+    left: 2rem;
+  }
+
+  .app-store {
+    width: 4rem;
+  }
+
+  #step {
+    gap: 1.5rem;
+  }
+
+  #about .history {
+    padding-left: 2rem;
   }
 }

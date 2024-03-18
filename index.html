@@ -35,8 +35,8 @@
         </div>
 
         <div class="app-store">
-            <a href=""><img src="./images/apple.png" alt="logo lien app store" /></a>
-            <a href=""
+            <a href="https://www.apple.com/fr/app-store/"><img src="./images/apple.png" alt="logo lien app store" /></a>
+            <a href="https://play.google.com/store/apps?hl=fr&gl=US"
           ><img src="./images/google.png" alt="logo lien google play"
         /></a></div> 
         <form action="" class="input">
@@ -52,8 +52,77 @@
                 <label for="enddate">Date de fin</label>
                 <input type="date" name="enddate" id="enddate" required />
             </div>
-                <button type="submit">Rechercher</button>
+                <button type="submit" id="button">Rechercher</button>
         </form>
+        <div class="wrapper">  
+              <form action="#">
+                <div class="form-box login">
+                    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+                    <h2>Identifiant</h2>
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                  <input type="email" name="email" required />
+                  <label for="email">Entrez votre email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                  <input type="password" name="password" required />
+                  <label for="password">Entrez votre mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                  <label for="checkbox"
+                    ><input type="checkbox" name="checkbox" /> Ce souvenir de
+                    moi</label
+                  >
+                  <a href="#">Mot de passe oublié</a>
+                </div>
+                <button type="submit" class="btn">connexion</button>
+                <div class="register-login">
+                  <p>
+                     Pas encore membre ?<a href="#" class="register-link">
+                      inscrivez-vous</a
+                    >
+                  </p>
+                </div>
+                </div>
+              </form>
+            
+              <form action="#">
+                <div class="form-box register">
+                    <h2>Inscription</h2>
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="person"></ion-icon></span>
+                  <input type="name" name="name" required />
+                  <label for="name">Nom d'utilisateur</label>
+                </div>
+    
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                  <input type="email" name="email" required />
+                  <label for="email">Entrez votre email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                  <input type="password" name="password" required />
+                  <label for="password">Entrez votre mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                  <label for="checkbox"
+                    ><input type="checkbox" name="checkbox" /> j'accepte les
+                    <a href="#">termes et conditions</a></label
+                  >
+                </div>
+    
+                <button type="submit" class="btn"> S'enregistrer</button>
+                <div class="register-login">
+                  <p>
+                    Déja membre ?<a href="#" class="login-link"> Connectez-vous</a>
+                  </p>
+                </div>
+                </div>
+              </form>
+            
+          </div>
     </section>
     <section id="function">
       <h4>Comment ça marche ?</h4>
@@ -93,49 +162,49 @@
                 <div class="card-img">
                 <img src="./images/car-01.jpg" alt="image voiture" /></div>
                 <p>2018</p>
-                <p>BMW</p>
+                <p class="card-text">BMW</p>
                 <p>150€<span> /mois</span></p>
-                <button class="btn">Louer maintenant</button>
+                <button class="btn" onclick="openPage(this)">Louer maintenant</button>
             </div>
             <div class="card">
                 <div class="card-img">
                 <img src="./images/car-02.jpg" alt="image voiture" /></div>
                 <p>2018</p>
-                <p>Honda</p>
+                <p class="card-text">Honda</p>
                 <p>150€<span> /mois</span></p>
-                <button class="btn">Louer maintenant</button>
+                <button class="btn" onclick="openPage(this)">Louer maintenant</button>
             </div>
             <div class="card">
                 <div class="card-img">
                 <img src="./images/car-03.jpg" alt="image voiture" /></div>
                 <p>2018</p>
-                <p>Yamaha</p>
+                <p class="card-text">Yamaha</p>
                 <p>150€<span> /mois</span></p>
-                <button class="btn">Louer maintenant</button>
+                <button class="btn" onclick="openPage(this)">Louer maintenant</button>
             </div>
             <div class="card">
                 <div class="card-img">
                 <img src="./images/car-04.jpg" alt="image voiture" /></div>
                 <p>2018</p>
-                <p>Toyota</p>
+                <p class="card-text">Toyota</p>
                 <p>150€<span> /mois</span></p>
-                <button class="btn">Louer maintenant</button>
+                <button class="btn" onclick="openPage(this)">Louer maintenant</button>
             </div>
             <div class="card">
                 <div class="card-img">
                 <img src="./images/car-05.jpg" alt="image voiture" /></div>
                 <p>2018</p>
-                <p>Toyota</p>
+                <p class="card-text">Toyota</p>
                 <p>150€<span> /mois</span></p>
-                <button class="btn">Louer maintenant</button>
+                <button class="btn" onclick="openPage(this)">Louer maintenant</button>
             </div>
             <div class="card">
                 <div class="card-img">
                 <img src="./images/car-06.jpg" alt="image voiture" /></div>
                 <p>2018</p>
-                <p>BMW</p>
+                <p class="card-text">BMW</p>
                 <p>150€<span> /mois</span></p>
-                <button class="btn">Louer maintenant</button>
+                <button class="btn" onclick="openPage(this)">Louer maintenant</button>
             </div>
         </div>    
     </section>
