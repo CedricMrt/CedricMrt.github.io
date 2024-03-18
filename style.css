@@ -87,10 +87,10 @@ nav .logo img {
 }
 
 .navigation a::after {
-  top: -4px;
+  top: -0.4rem;
 }
 .navigation a::before {
-  bottom: -4px;
+  bottom: -0.4rem;
 }
 
 .navigation a.active::after,
@@ -101,11 +101,11 @@ nav .logo img {
 }
 
 nav .user ion-icon {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #toggle ion-icon {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .user {
@@ -114,7 +114,7 @@ nav .user ion-icon {
   padding: 1.3rem 2rem;
   color: white;
   background: rgb(244, 92, 54);
-  border-radius: 7px;
+  border-radius: 0.7rem;
   align-items: center;
   transition: background 0.2s ease-in-out;
 }
@@ -165,14 +165,14 @@ nav .user ion-icon {
 }
 
 .app-store img {
-  width: 15rem;
+  width: clamp(130px, 15vw, 180px);
 }
 
 form {
   background-color: white;
   color: black;
   border-radius: 0.5rem;
-  padding: 2.2rem 2rem;
+  padding: 2rem 2rem 1.3rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -194,7 +194,7 @@ input {
 
 input {
   background: #dddcdc;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   padding: 0.6rem;
 }
 
@@ -216,9 +216,9 @@ form button:hover {
 
 .wrapper {
   position: absolute;
-  top: 65%;
+  top: 60rem;
   width: 90%;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
   transition: transform 0.5s ease;
 }
 
@@ -236,7 +236,7 @@ form button:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .wrapper .form-box.login {
@@ -245,16 +245,16 @@ form button:hover {
 }
 .wrapper.on .form-box.login {
   transition: none;
-  transform: translateX(-500px);
+  transform: translateX(-50rem);
 }
 
 .wrapper .form-box.register {
   gap: 1rem;
   position: absolute;
-  top: -400px;
-  left: 50px;
+  top: -40rem;
+  left: 5rem;
   transition: none;
-  transform: translateX(-500px);
+  transform: translateX(-50rem);
 }
 
 .wrapper.on .form-box.register {
@@ -265,8 +265,8 @@ form button:hover {
 .icon-close ion-icon {
   position: absolute;
   color: #bd3816;
-  top: -18px;
-  right: -18px;
+  top: -0.5rem;
+  right: -1.8rem;
   font-size: 2.5rem;
   cursor: pointer;
   z-index: 1;
@@ -280,15 +280,15 @@ form button:hover {
 .wrapper .input-box {
   position: relative;
   width: 100%;
-  height: 50px;
-  margin: 10px 0;
+  height: 5rem;
+  margin: 1rem 0;
 }
 
 .input-box label {
   position: absolute;
   font-size: 1rem;
   left: 0;
-  top: -10px;
+  top: -1rem;
   pointer-events: none;
   transform: translateY(-50%);
   transition: 0.5s;
@@ -301,8 +301,8 @@ form button:hover {
 
 .input-box .icon {
   font-size: 1.6rem;
-  top: 12px;
-  right: 45px;
+  top: 1.2rem;
+  right: 4.5rem;
 }
 
 .wrapper .remember-forgot {
@@ -313,7 +313,7 @@ form button:hover {
 
 input[type="checkbox"] {
   accent-color: black;
-  margin-right: 3px;
+  margin-right: 0.3rem;
 }
 
 .remember-forgot a {
@@ -346,7 +346,7 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
-  margin: 5rem 1rem 0 1rem;
+  margin: 5rem 1.5rem 0 1.5rem;
 }
 
 #step h3 {
@@ -360,7 +360,7 @@ input[type="checkbox"] {
 .substep {
   position: relative;
   background: white;
-  max-width: 550px;
+  max-width: 55rem;
   padding: 2rem 0.5rem;
 }
 
@@ -435,7 +435,7 @@ input[type="checkbox"] {
 
 .card {
   padding: 1rem;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -447,7 +447,7 @@ input[type="checkbox"] {
 .card-img img {
   width: 100%;
   height: 100%;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   object-fit: cover;
   object-position: center;
 }
@@ -460,7 +460,7 @@ input[type="checkbox"] {
   font-size: 1.6rem;
   background: rgb(244, 92, 54);
   color: white;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   padding: 0 1rem;
   width: 60px;
   margin-top: 1.5rem;
@@ -486,7 +486,7 @@ input[type="checkbox"] {
   background: rgb(244, 92, 54);
   color: white;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   padding: 1.1rem;
   margin-top: 1rem;
   font-size: 1.6rem;
@@ -506,7 +506,7 @@ input[type="checkbox"] {
 }
 
 #about img {
-  width: clamp(250px, 50vw, 800px);
+  width: clamp(200px, 50vw, 800px);
 }
 
 .text span {
@@ -520,7 +520,6 @@ input[type="checkbox"] {
   flex-direction: column;
   justify-content: space-around;
   align-items: start;
-  min-height: 22rem;
 }
 
 .text p {
@@ -533,7 +532,7 @@ input[type="checkbox"] {
   color: white;
   padding: 1rem;
   font-size: 1.5rem;
-  border-radius: 7px;
+  border-radius: 0.7rem;
 }
 
 /* ################### AVIS CARDS ############## */
@@ -558,8 +557,8 @@ input[type="checkbox"] {
 }
 
 .aviscards .photo {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   overflow: hidden;
   margin: 1rem auto;
@@ -577,7 +576,7 @@ input[type="checkbox"] {
 
 .notes ion-icon {
   color: rgb(244, 92, 54);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .aviscards .names {
@@ -610,7 +609,7 @@ input[type="checkbox"] {
 .newsletter {
   width: 33rem;
   background: white;
-  border-radius: 7px;
+  border-radius: 0.7rem;
   display: flex;
   justify-content: space-between;
   padding: 0 1rem;
@@ -619,14 +618,14 @@ input[type="checkbox"] {
 .newsletter button {
   background: rgb(244, 92, 54);
   color: white;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   padding: 1rem 0.8rem;
   font-size: 1.6rem;
   margin: 0.5rem 0rem;
 }
 
 .newsletter input {
-  font-size: 14px;
+  font-size: 1.5rem;
   margin: 0.5rem 0;
 }
 
@@ -653,7 +652,7 @@ footer p {
 }
 
 #social img {
-  width: 50px;
+  width: 5rem;
 }
 
 #social ul {
@@ -664,7 +663,7 @@ footer p {
 #social li ion-icon {
   color: white;
   background: rgb(244, 92, 54);
-  font-size: 15px;
+  font-size: 1.5rem;
   border-radius: 50%;
   padding: 0.8rem;
 }
@@ -752,27 +751,60 @@ footer p {
 
 /* ################## MEDIA QUERIES #################*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
+  .home {
+    padding-left: 5rem;
+  }
+
   .home .input {
-    bottom: 0.5rem;
+    bottom: 1.3rem;
     left: 1rem;
-    max-height: 30rem;
     margin-right: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    position: absolute;
+    top: 8.5rem;
+    left: 5rem;
+  }
+
+  .search {
+    display: block;
   }
 
   .wrapper {
     left: 2rem;
   }
 
+  .app-store a {
+    width: 120px;
+  }
+
   .app-store {
-    width: 4rem;
+    position: absolute;
+    top: 37.5rem;
+    left: 12rem;
+    gap: 0;
+    z-index: 1;
   }
 
   #step {
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+
+  #step h3 {
+    font-size: 1.7rem;
   }
 
   #about .history {
-    padding-left: 2rem;
+    display: block;
+    padding: 5rem 2rem;
+  }
+
+  #avis {
+    padding: 2rem 5rem;
   }
 }
