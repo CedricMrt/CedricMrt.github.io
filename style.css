@@ -218,8 +218,9 @@ form button:hover {
   position: absolute;
   top: 60rem;
   width: 90%;
-  transform: translateX(-110%);
+  transform: translateX(-120%);
   transition: transform 0.5s ease;
+  z-index: 2;
 }
 
 .wrapper form {
@@ -611,7 +612,7 @@ input[type="checkbox"] {
   background: white;
   border-radius: 0.7rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 1rem;
 }
 
