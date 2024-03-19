@@ -226,7 +226,7 @@ input {
 .wrapper form {
   background: rgba(255, 255, 255, 0.8);
   color: black;
-  left: 2rem;
+  left: 1.6rem;
 }
 
 .wrapper.show-popup {
