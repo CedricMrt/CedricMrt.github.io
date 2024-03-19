@@ -186,19 +186,19 @@ form {
   flex-direction: column;
 }
 
-label,
+#form label,
 input {
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-input {
+#form input {
   background: #dddcdc;
   border-radius: 0.4rem;
   padding: 0.6rem;
 }
 
-form button {
+#form button {
   color: white;
   font-size: 1.6rem;
   background: rgb(244, 92, 54);
@@ -208,7 +208,7 @@ form button {
   transition: background 0.2s ease-in-out;
 }
 
-form button:hover {
+#form button:hover {
   background: #bd3816;
 }
 
@@ -607,32 +607,27 @@ input[type="checkbox"] {
   margin-bottom: 2rem;
 }
 
-.newsletter {
-  width: 33rem;
+.newsletters {
+  width: 34rem;
   background: white;
   border-radius: 0.7rem;
   display: flex;
   justify-content: center;
   gap: 0.3rem;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.newsletter input {
-  width: 250px;
-}
-
-.newsletter button {
+.newsletters button {
   background: rgb(244, 92, 54);
   color: white;
   border-radius: 0.6rem;
   padding: 1rem 0.8rem;
   font-size: 1.6rem;
-  margin: 0.5rem 0rem;
 }
 
-.newsletter input {
+.newsletters input {
   font-size: 1.5rem;
-  margin: 0.5rem 0;
+  width: 210px;
 }
 
 /* ################### FOOTER ######################## */
@@ -762,7 +757,7 @@ footer p {
     padding-left: 5rem;
   }
 
-  .home .input {
+  #form {
     bottom: 1.3rem;
     left: 1rem;
     margin-right: 1rem;
