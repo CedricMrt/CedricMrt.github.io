@@ -217,7 +217,7 @@ input {
 .wrapper {
   position: absolute;
   top: 60rem;
-  width: 90%;
+  width: 100%;
   transform: translateX(-120%);
   transition: transform 0.5s ease;
   z-index: 2;
@@ -226,7 +226,7 @@ input {
 .wrapper form {
   background: rgba(255, 255, 255, 0.8);
   color: black;
-  left: 2.5rem;
+  left: 2rem;
 }
 
 .wrapper.show-popup {
@@ -253,7 +253,7 @@ input {
   gap: 1rem;
   position: absolute;
   top: -40rem;
-  left: 5rem;
+  left: 4.8rem;
   transition: none;
   transform: translateX(-50rem);
 }
