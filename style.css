@@ -226,11 +226,11 @@ input {
 .wrapper form {
   background: rgba(255, 255, 255, 0.8);
   color: black;
-  left: 1.6rem;
 }
 
 .wrapper.show-popup {
   transform: translateX(0);
+  left: 2rem;
 }
 
 .wrapper .form-box {
@@ -253,7 +253,7 @@ input {
   gap: 1rem;
   position: absolute;
   top: -40rem;
-  left: 4.8rem;
+  left: 4rem;
   transition: none;
   transform: translateX(-50rem);
 }
