@@ -50,7 +50,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  z-index: 1;
+  z-index: 9;
 }
 
 nav.scroll {
@@ -220,7 +220,7 @@ input {
   width: 100%;
   transform: translateX(-120%);
   transition: transform 0.5s ease;
-  z-index: 2;
+  z-index: 6;
 }
 
 .wrapper form {
@@ -706,7 +706,7 @@ footer p {
     color: black;
     cursor: pointer;
     position: relative;
-    z-index: 20;
+    z-index: 10;
   }
 
   #toggle .ouvrir {
@@ -789,7 +789,7 @@ footer p {
     top: 37.5rem;
     left: 12rem;
     gap: 0;
-    z-index: 1;
+    z-index: 5;
   }
 
   #step {
