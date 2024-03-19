@@ -613,7 +613,12 @@ input[type="checkbox"] {
   border-radius: 0.7rem;
   display: flex;
   justify-content: center;
+  gap: 0.3rem;
   padding: 0 1rem;
+}
+
+.newsletter input {
+  width: 250px;
 }
 
 .newsletter button {
