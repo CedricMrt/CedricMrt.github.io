@@ -1,0 +1,167 @@
+/*=============== project CARD ===============*/
+
+.card__container {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 3rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+  max-height: 200px;
+  padding: 0.5rem;
+  border: 1px solid var(--red-6);
+  border-radius: 15px;
+  background-color: var(--red-4);
+  box-shadow: 0 3px 8px var(--red-9);
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card__data {
+  width: 90%;
+  background-color: var(--red-4);
+  padding: 1rem;
+  box-shadow: 0 3px 8px black;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--red-11);
+}
+
+.card__title {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: var(--red-12);
+}
+
+.codeLanguage {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language__item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--red-12);
+  color: var(--red-2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+}
+
+.language__item img {
+  width: 14px;
+  margin-right: 0.4rem;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 0.5s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 1s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 1s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 0.5s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/* ########## course card ########### */
+
+.courses__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--red-12);
+  background: var(--red-3);
+  border: 1px solid var(--red-6);
+  border-radius: 15px;
+  box-shadow: 0 3px 8px var(--red-9);
+  padding: 1.5rem;
+}
+
+.courses__language {
+  max-width: 4.5rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--red-12);
+  color: var(--red-2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 15px;
+}
+
+.courses__language img {
+  width: 18px;
+  margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .card__container {
+    grid-template-columns: 1fr;
+  }
+}
