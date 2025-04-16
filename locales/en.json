@@ -1,0 +1,33 @@
+{
+  "translation": {
+    "navbar__link1": "Skills",
+    "navbar__link2": "Projects",
+    "me": "I'm",
+    "job": "Full stack Developer.",
+    "description": "From south of France, i like build things for web with great user experiences.",
+    "h2Title1": "Skills",
+    "h2Title2": "Projects",
+    "h2Title4": "Send me a message",
+    "contactText": "Got a question or proposal, or just want to say hello? Go ahead.",
+    "labelName": "Your Name",
+    "labelEmail": "Your Email",
+    "labelMessage": "Your Message",
+    "cardTitle0": "A Kanban (Trello like)",
+    "cardTitle1": "Coffee-shop",
+    "cardTitle2": "Weather App",
+    "cardTitle5": "Car Rental",
+    "cardTitle6": "Travel rental (Booking,Airbnb like)",
+    "cardTitle7": "Educational Games App",
+    "cardText0": "An Api Rest project with its Frontend in monorepo.",
+    "cardText1": "A 100% back-end project currently underway development to add new features ",
+    "cardText2": "Perfect app for learning API Fetch",
+    "cardText3": "Want a five-question quiz, click!",
+    "cardText4": "The TodoList, is a fundamental tool for anyone looking to improve their time management.",
+    "cardText5": "Front-end project for a car rental, coded in html, css and javascript",
+    "cardText6": "SaaS applications for travel rentals, on the left innovguide => traveler, on the right innovrental => owner (back office)",
+    "cardText7": "Currently used in an elementary school to teach different subjects in the form of educational games",
+    "clickHereTry": "Click here to try it",
+    "innovqube": "InnovGuide/InnovRental project in alpha version",
+    "formButton": "Shoot => {}"
+  }
+}

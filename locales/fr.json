@@ -1,0 +1,33 @@
+{
+  "translation": {
+    "navbar__link1": "Compétences",
+    "navbar__link2": "Projets",
+    "me": "je suis",
+    "job": "Développeur Full stack.",
+    "description": "Originaire du sud de la france, j'aime construire des choses pour le Web avec d'excellentes expériences utilisateur.",
+    "h2Title1": "Compétences",
+    "h2Title2": "Projets",
+    "h2Title4": "Envoyez moi un méssage",
+    "contactText": "Vous avez une question, une proposition, ou simplement envie de dire bonjour ? Allez-y.",
+    "labelName": "Votre Nom",
+    "labelEmail": "Votre Email",
+    "labelMessage": "Votre Message",
+    "cardTitle0": "Un Kanban (Trello like)",
+    "cardTitle1": "Boutique de café",
+    "cardTitle2": "Appli météo",
+    "cardTitle5": "Location de voiture",
+    "cardTitle6": "Location de voyage (Booking,Airbnb like)",
+    "cardTitle7": "Appli de Jeux Educatif",
+    "cardText0": "Un projet Api Rest avec son Frontend en monorepo",
+    "cardText1": "Un projet 100% back-end, rendu en vue EJS, actuellement en cours de développement pour ajouter de nouvelles fonctionnalités. ",
+    "cardText2": "Application parfaite pour apprendre l'API Fetch",
+    "cardText3": "Petit quizz de 5 questions avec scores",
+    "cardText4": "La TodoList est un outil fondamental pour quiconque cherche à améliorer leur gestion du temps.",
+    "cardText5": "Projet front-end pour une location de voiture, codé en html, css et javascript",
+    "cardText6": "Applications SaaS pour des locations de voyages, à gauche innovguide => voyageur, à droite innovrental => propriétaire (back-office)",
+    "cardText7": "Actuellement utilisé dans une école primaire pour apprendre différentes matières sous forme de jeux éducatifs",
+    "clickHereTry": "Cliquez ici pour l'essayer",
+    "innovqube": "Projet InnovGuide/InnovRental en version alpha",
+    "formButton": "Envoyez => {}"
+  }
+}
